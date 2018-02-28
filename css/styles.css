@@ -4,7 +4,7 @@
 
 */
 #left-col {
-  background: url(https://source.unsplash.com/random);
+  background: url(https://source.unsplash.com/collection/1141740);
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,12 +15,12 @@
 #weather-container {
   height: 250px;
   padding: 10px;
-  background-color: #F5F0F2;
+  background-color: #ffffff;
   border: 5px solid #fff;
 }
 .content-box {
   border: 5px solid #fff;
-  color: #F5F0F2;
+  color: #ffffff;
 }
 #food-container {
   background-color: #FF3E12;
