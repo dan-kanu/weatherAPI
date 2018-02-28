@@ -1,3 +1,5 @@
+
+
 /*
 var request= new XMLHttpRequest();
 
@@ -26,15 +28,18 @@ function getData(){
 document.getElementById('myBtn').addEventListener('click', getData);
 */
 
-$(function(){
-    var key="6cccbb60692e99f5004192f18bcb6dd5";
-    $.ajax({
-        type:'GET',
-        url:'https://api.unsplash.com/photos/?client_id=1a28e59e586593faf822eb102154d46e8f56c830d3e5d896a0293804233f991a&per_page=1&page=1',
-        success: function(data){
-            console.log('success',data[0].urls.full);
 
-            document.getElementById('api-test').style.backgroundImage = "url(" + data[0].urls.full +")";
+$(function () {
+    var key = "&client_id=6cccbb60692e99f5004192f18bcb6dd5";
+    var unsplashURL = "";
+    $.ajax({
+        type: 'GET',
+        url: 'https://api.unsplash.com/'+key,
+        success: function (data) {
+            console.log('success', data[0].urls.full);
+
+            document.getElementById('left-col').style.background = "url(https://source.unsplash.com/random)";
         }
     })
 })
+

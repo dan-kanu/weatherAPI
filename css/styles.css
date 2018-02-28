@@ -1,0 +1,49 @@
+/*
+    Application Title: Weather API application
+    Author: Daniel Kanu;
+
+*/
+#left-col {
+  background: url(https://source.unsplash.com/random);
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#right-col {
+  padding: 0px 15px;
+}
+#weather-container {
+  height: 250px;
+  padding: 10px;
+  background-color: #F5F0F2;
+  border: 5px solid #fff;
+}
+.content-box {
+  border: 5px solid #fff;
+  color: #F5F0F2;
+}
+#food-container {
+  background-color: #FF3E12;
+}
+#stuff-container {
+  background-color: #E12D53;
+}
+#services-container {
+  background-color: #ffc107;
+}
+#shop-container {
+  background: #4C8DCA;
+}
+#blank-container {
+  background: #4C8DCA;
+}
+#blank2-container {
+  background: #4C8DCA;
+}
+.row2,
+.row3 {
+  height: 250px;
+}
+.row4 {
+  height: 150px;
+}

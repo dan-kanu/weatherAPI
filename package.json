@@ -1,0 +1,28 @@
+{
+  "name": "weatherapi",
+  "version": "1.0.0",
+  "description": "\"Just a quick, short project that uses APIs\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dan-kanu/weatherAPI.git"
+  },
+  "keywords": [
+    "APIs"
+  ],
+  "author": "Daniel Kanu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dan-kanu/weatherAPI/issues"
+  },
+  "homepage": "https://github.com/dan-kanu/weatherAPI#readme",
+  "dependencies": {
+    "bootstrap": "*",
+    "express": "4.16.2",
+    "node-requirejs": "^0.1.1",
+    "unsplash-js": "^4.8.0"
+  }
+}
