@@ -14,7 +14,7 @@
 #weather-container {
   height: 250px;
   padding: 10px;
-  background-color: #ffffff;
+  background-color: #e9f7f8;
   border: 5px solid #fff;
 }
 #weather-container #temperature-display {
