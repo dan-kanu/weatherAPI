@@ -4,7 +4,6 @@
 
 */
 #left-col {
-  background: url(https://source.unsplash.com/collection/1141740);
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,9 +17,15 @@
   background-color: #ffffff;
   border: 5px solid #fff;
 }
+#weather-container #temperature-display {
+  color: #FF3E12;
+  font-size: 26px;
+}
 .content-box {
   border: 5px solid #fff;
   color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
 }
 #food-container {
   background-color: #FF3E12;

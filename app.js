@@ -28,18 +28,38 @@ function getData(){
 document.getElementById('myBtn').addEventListener('click', getData);
 */
 
-
-$(function () {
-    var key = "&client_id=6cccbb60692e99f5004192f18bcb6dd5";
+var key = "&client_id=6cccbb60692e99f5004192f18bcb6dd5";
     var unsplashURL = "";
+    var apiKey="APPID=6cccbb60692e99f5004192f18bcb6dd5";
+    var weatherUrl="http://api.openweathermap.org/data/2.5/weather?q=";
+    var geoCity=document.getElementById('geo-City');
+    var geoRegion=document.getElementById('state');
+    var temp=document.getElementById('temperature');
+   
+$(function () {
+    var regionGeo=geoplugin_regionName();
     $.ajax({
         type: 'GET',
-        url: 'https://api.unsplash.com/'+key,
+        url: 'https://api.unsplash.com/' + key,
         success: function (data) {
             console.log('success', data[0].urls.full);
-
-            document.getElementById('left-col').style.background = "url(https://source.unsplash.com/random)";
         }
-    })
-})
+    });
+    $.ajax({
+        type: 'GET',
+        url: weatherUrl+geoplugin_city()+'&'+apiKey+'&units=imperial',
+        success: function (data) {
+            console.log(data);
+            temp.innerHTML=data.main.temp;
+            geoCity.innerHTML=data.name;
+            geoRegion=innerHTML=geoplugin_regionName();
+            document.getElementById('state').innerHTML=geoplugin_regionName();
+           
+        }
+    });
+
+        
+    document.getElementById('left-col').style.background = "linear-gradient(rgba(255, 255, 255, 0.25),rgba(255, 255, 255, 0.65)),url('https://source.unsplash.com/1600x900/?arizona," + regionGeo +")";
+});
+
 

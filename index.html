@@ -21,7 +21,7 @@
       <div id="">
         <div class="container">
           <div>
-            
+
           </div>
         </div>
       </div>
@@ -31,7 +31,19 @@
     <div class="col-sm-6" id="right-col">
       <div class="row">
         <div class="col-lg-12" id="weather-container">
-          <h1>Weather Container</h1>
+          <p id="temperature-display">
+            <span id="temperature"></span>
+            <span>&#176;</span>
+          </p>
+          <div id="geolocation">
+            <h3>
+              <span id="geo-City">City</span>
+            </h3>
+
+            <p id="state">
+              <span id="statee">State</span>
+            </p>
+          </div>
         </div>
       </div>
       <!-- R0w 2-->
@@ -58,13 +70,13 @@
       </div>
       <!-- Row 4 -->
       <div class="row row4">
-          <div class="col-sm-6 content-box" id="blank-container">
-            <h3>Service</h3>
-          </div>
-          <div class="col-sm-6 content-box" id="blank2-container">
-            <h3>Stuff</h3>
-          </div>
+        <div class="col-sm-6 content-box" id="blank-container">
+          <h3>Service</h3>
         </div>
+        <div class="col-sm-6 content-box" id="blank2-container">
+          <h3>Stuff</h3>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -79,6 +91,7 @@
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="app.js"></script>
+  <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
 </body>
 
 </html>
